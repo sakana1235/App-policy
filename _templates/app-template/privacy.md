@@ -18,7 +18,7 @@ description: APP_NAME のプライバシーポリシー。
 
 ### お問い合わせ
 
-<{{ site.contact_email }}>
+<{{ page.contact_email | default: site.contact_email }}>
 
 </section>
 
@@ -30,7 +30,7 @@ description: APP_NAME のプライバシーポリシー。
 
 ### Contact
 
-<{{ site.contact_email }}>
+<{{ page.contact_email | default: site.contact_email }}>
 
 </section>
 
@@ -42,6 +42,6 @@ description: APP_NAME のプライバシーポリシー。
 
 ### 联系方式
 
-<{{ site.contact_email }}>
+<{{ page.contact_email | default: site.contact_email }}>
 
 </section>

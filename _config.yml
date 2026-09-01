@@ -3,8 +3,8 @@ title: App Policies
 description: Privacy policies and terms for our apps.
 lang: ja
 
-# ▼ 公開用の連絡先メールアドレス（App Store Connect 申請前に必ず書き換えてください）
-contact_email: "REPLACE_ME@example.com"
+# ▼ サイト共通の連絡先メールアドレス（各ポリシーの front matter で個別に上書き可能）
+contact_email: "support@niyareco.love"
 
 # サイトの公開 URL（GitHub Pages の設定に合わせる）
 # 例: https://sakana1235.github.io/App-policy

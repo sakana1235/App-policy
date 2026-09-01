@@ -39,7 +39,7 @@ Civimech（以下「本アプリ」）は、利用者の個人情報を一切収
 ### お問い合わせ
 
 本ポリシーに関するお問い合わせは次までご連絡ください。
-<{{ site.contact_email }}>
+<{{ page.contact_email | default: site.contact_email }}>
 
 </section>
 
@@ -72,7 +72,7 @@ If this policy changes, the latest version will be posted on this page and the "
 ### Contact
 
 For questions about this policy, please contact:
-<{{ site.contact_email }}>
+<{{ page.contact_email | default: site.contact_email }}>
 
 </section>
 
@@ -105,6 +105,6 @@ Civimech（以下称“本应用”）不收集任何个人信息。
 ### 联系方式
 
 关于本政策的疑问，请联系：
-<{{ site.contact_email }}>
+<{{ page.contact_email | default: site.contact_email }}>
 
 </section>

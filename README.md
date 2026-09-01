@@ -18,8 +18,9 @@
 
 Jekyll は GitHub Pages 側でビルドされるため、GitHub Actions の設定は不要です。
 
-> **申請前に必ず**: `_config.yml` の `contact_email` を実際の連絡先メールアドレスに
-> 書き換えてください。初期値は `REPLACE_ME@example.com` のままです。
+問い合わせ先は `_config.yml` の `contact_email`（現在 `support@niyareco.love`）が
+サイト共通の既定値です。アプリごとに変えたい場合は、そのポリシーの front matter に
+`contact_email: other@example.com` を書けば、そのページだけ上書きされます。
 
 ## ディレクトリ構成
 
