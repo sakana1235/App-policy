@@ -1,0 +1,30 @@
+# GitHub Pages (Jekyll) settings
+title: App Policies
+description: Privacy policies and terms for our apps.
+lang: ja
+
+# ▼ 公開用の連絡先メールアドレス（App Store Connect 申請前に必ず書き換えてください）
+contact_email: "REPLACE_ME@example.com"
+
+# サイトの公開 URL（GitHub Pages の設定に合わせる）
+# 例: https://sakana1235.github.io/App-policy
+url: "https://sakana1235.github.io"
+baseurl: "/App-policy"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - _templates
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      langs: ["ja", "en", "zh"]

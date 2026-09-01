@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<script>document.documentElement.className += " js";</script>
+<article class="policy">
+  <nav class="breadcrumb">
+    <a href="{{ '/' | relative_url }}">Home</a> /
+    <a href="{{ page.app_url | relative_url }}">{{ page.app_name }}</a> /
+    <span>{{ page.doc_name | default: page.title }}</span>
+  </nav>
+
+  <h1>{{ page.app_name }} — {{ page.doc_name | default: page.title }}</h1>
+  <p class="updated">Last updated / 最終更新日: {{ page.updated }}</p>
+
+  {% include lang-switcher.html %}
+
+  {{ content }}
+</article>
+<script src="{{ '/assets/js/lang.js' | relative_url }}"></script>

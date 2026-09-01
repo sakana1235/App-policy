@@ -1,0 +1,9 @@
+# 公開するアプリの一覧。アプリを追加するときはここに 1 ブロック追記する。
+# docs の url は各ポリシーページの permalink と一致させること。
+- id: civimech
+  name: Civimech
+  tagline: "オフラインで遊べるゲームアプリ / An offline game app"
+  url: /civimech/
+  docs:
+    - name: プライバシーポリシー / Privacy Policy
+      url: /civimech/privacy/

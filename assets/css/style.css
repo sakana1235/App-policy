@@ -1,0 +1,76 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1b1d21;
+  --muted: #61666e;
+  --line: #e3e5e9;
+  --accent: #2f6feb;
+  --card: #f7f8fa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --fg: #e7e9ee;
+    --muted: #9aa1ac;
+    --line: #2a2e35;
+    --accent: #6fa0ff;
+    --card: #1c1f25;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP",
+    "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 1.25rem;
+}
+.site-title { font-weight: 700; text-decoration: none; color: var(--fg); }
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+  padding: 1rem 1.25rem;
+  text-align: center;
+}
+a { color: var(--accent); }
+h1 { font-size: 1.6rem; line-height: 1.4; margin: .2em 0 .4em; }
+h2 { font-size: 1.25rem; margin-top: 2.2em; border-bottom: 1px solid var(--line); padding-bottom: .3em; }
+h3 { font-size: 1.05rem; margin-top: 1.8em; }
+.updated, .breadcrumb { color: var(--muted); font-size: .85rem; }
+.breadcrumb { margin-bottom: 1rem; }
+
+.app-list { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 1rem; }
+.app-list li {
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+.app-list h2 { margin: 0 0 .2em; border: 0; padding: 0; font-size: 1.1rem; }
+.app-list p { margin: .2em 0 .6em; color: var(--muted); font-size: .9rem; }
+.app-list a.doc { display: inline-block; margin-right: 1rem; }
+
+.lang-switcher { display: flex; gap: .5rem; margin: 1.2rem 0 2rem; flex-wrap: wrap; }
+.lang-switcher button {
+  font: inherit;
+  font-size: .9rem;
+  padding: .35em 1em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--fg);
+  cursor: pointer;
+}
+.lang-switcher button.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* 言語セクション: JS が無い環境では全言語を表示する */
+.lang-section { margin-top: 2rem; }
+.js .lang-section { display: none; }
+.js .lang-section.is-visible { display: block; }

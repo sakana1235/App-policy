@@ -1,0 +1,11 @@
+{%- assign labels = "ja:日本語,en:English,zh:简体中文" | split: "," -%}
+<nav class="lang-switcher" aria-label="Language">
+{%- for code in page.langs -%}
+{%- for pair in labels -%}
+{%- assign kv = pair | split: ":" -%}
+{%- if kv[0] == code %}
+  <button type="button" data-lang="{{ code }}">{{ kv[1] }}</button>
+{%- endif -%}
+{%- endfor -%}
+{%- endfor %}
+</nav>
