@@ -7,3 +7,39 @@
   docs:
     - name: プライバシーポリシー / Privacy Policy
       url: /civimech/privacy/
+- id: niyareco
+  name: NiyaReco
+  tagline: "「大好き」を記録するログ＆日記アプリ / A log and diary app for the things you love"
+  url: /niyareco/
+  docs:
+    - name: プライバシーポリシー / Privacy Policy
+      url: /niyareco/privacy/
+    - name: 利用規約 / Terms of Service
+      url: /niyareco/terms/
+- id: locklog
+  name: LockLog
+  tagline: "鍵の施錠を記録し、家族と共有するアプリ / Record your locks and share status with your household"
+  url: /locklog/
+  docs:
+    - name: プライバシーポリシー / Privacy Policy
+      url: /locklog/privacy/
+    - name: 利用規約 / Terms of Use
+      url: /locklog/terms/
+- id: bosaid
+  name: Bosaid
+  tagline: "防災計画・備蓄・安否確認を支えるアプリ / Disaster planning, stockpiles, and safety check-ins"
+  url: /bosaid/
+  docs:
+    - name: プライバシーポリシー / Privacy Policy
+      url: /bosaid/privacy/
+    - name: 利用規約 / Terms of Use
+      url: /bosaid/terms/
+- id: todocare
+  name: Todocare
+  tagline: "介護情報基盤の事業所間連携アプリ「とどけあ」 / Messaging between care providers via the national care platform"
+  url: /todocare/
+  docs:
+    - name: プライバシーポリシー / Privacy Policy
+      url: /todocare/privacy/
+    - name: 利用規約 / Terms of Service
+      url: /todocare/terms/
